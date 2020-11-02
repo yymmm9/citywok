@@ -1,0 +1,299 @@
+html,
+body {
+  background: var(--white);
+  /* background: #efeee6; */
+}
+
+main{
+  padding: 0;
+}
+
+.device{
+  text-align: left;
+}
+
+.brrrand svg, .brrrand svg path{
+  fill:#e23232!important;
+}
+
+header{
+  mix-blend-mode: unset!important;
+}
+
+h3 p{
+  font-size: 11px;
+}
+
+#app{
+	text-align: center;
+}
+
+.cover{
+	height: 45vw;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1220px){
+  .cover{
+    height: 66vw;
+  }
+}
+
+#table{
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+	padding: 0 14px;
+	gap: 14px 14px;
+}
+
+.flex{
+  display: flex;
+}
+
+.title, span{
+  font-size: 1.3em;
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 300;
+}
+
+span{
+  font-size: .7em;
+  margin-top: 16px;
+}
+
+.descrizione{
+  margin-right: auto;
+  margin-left: 25px;
+  text-align: left;
+  padding-right: 6px;
+}
+
+.categoria{
+  font-weight: 700;
+  color: #C8A86A;
+}
+
+p{
+  margin-top: 6px;
+}
+
+@media only screen and (min-width: 543px){
+  #table{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1020px){
+  #table{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+#table li{
+  background: var(--bg);
+  border-radius: 7px;
+  padding: 0px 8px;
+}
+
+.device h3{
+  color: var(--i);
+  font-size: 14px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.device{
+	width: 100%;
+  height: fit-content;
+  margin-top: auto;
+}
+
+.device img{
+	/* width: 88%; */
+  width: 112px;
+	height: auto;
+  mix-blend-mode: darken;
+}
+.plus .device img{
+  width: 129px;
+}
+
+#pricing{
+	width: 100vw;
+
+	background: var(--bg);
+	box-shadow: 0px -4px 14px rgba(0, 0, 0, 0.17);
+	border-radius: 24px 24px 0px 0px;
+
+	position: fixed;
+	transform: translatey(100vh);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+	
+	transition: transform .7s var(--transition);
+}
+
+#pricing.show{
+	transform: translatey(0);
+}
+
+@media only screen and (min-width: 816px){
+  #pricing{
+    width: 70vw;
+    left: 50%;
+    transform: translatey(100vh) translatex(-50%);
+  }
+  #pricing.show{
+    transform: translatey(0) translatex(-50%);
+  }
+}
+
+#block{
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background: black;
+	opacity: 0;
+	z-index: 45;
+	pointer-events: none;
+	transition: opacity .5s var(--transition);
+}
+
+#block.show{
+	opacity:.3;
+	pointer-events: all;
+	transition: opacity .5s var(--transition);
+}
+
+.dragger{
+	width: 30vw;
+	height: 3px;
+	margin: 10px auto 0;
+
+	background: var(--iii);
+	border-radius: 100px;
+}
+
+#fetched-device{
+	margin-left: 24px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.services{
+  padding-top: 7px;
+}
+
+.services-container, .services{
+	display: flex;
+	overflow-x: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.services-container::-webkit-scrollbar, .services::-webkit-scrollbar {
+  display: none;
+}
+
+.services{
+  padding-right: 14px;
+}
+
+.service{
+	margin: 0 0 12px 24px;
+	text-align: left;
+}
+
+.service:nth-last-child(1){
+  padding-right: 24px;
+}
+
+.placeholder{
+	animation: glow 2s infinite;
+}
+
+@keyframes glow{
+	0%{opacity: 1;}
+	50%{opacity:.3;}
+	100%{opacity: 1;}
+}
+
+.service--img{
+  display: flex;
+	width: 90px;
+	height: 110px;
+	background: var(--bg);
+	box-shadow: 4px 2px 7px rgba(136, 165, 191, 0.54), -4px -4px 7px #FFFFFF;
+	border-radius: 16px;
+}
+
+.service--img svg{
+  margin: auto;
+  display: block;
+  width: 70%;
+}
+
+.placeholder{
+	background: #BFBFBF;
+}
+
+.service span.placeholder{
+	height: 11px;
+
+	margin: 5px;
+}
+
+.service span{
+	display: block;
+}
+
+.service--title{
+    font-size: 14px;
+    max-width: 90px;
+    color: var(--i);
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+.service--price{
+	font-size: 12px;
+	color: var(--ii);
+  margin: 0;
+}
+
+h2.placeholder{
+  width: 124px;
+  height: 20px;
+}
+
+.service--title.placeholder{
+	width: 92px;
+}
+
+.service--price.placeholder{
+	width: 57.5px;
+}
+
+.brrrand svg path{
+  fill: #fff;
+}
+
+footer{
+  margin-left: 22px;
+  margin-right: 22px;
+}
+@media only screen and (min-width: 816px){
+  footer {
+      margin-left: 7vw;
+      margin-right: 7vw;
+  }
+}
