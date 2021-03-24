@@ -169,11 +169,11 @@ function writePrice(data, tabletop) {
       section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>TEMAKI (cono)</h3></div>`);
       }
 if( e + 1 == 93){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>ONIGIRI (triangolo di riso con ripieno 1pz)</h3></div>` )	}
-if( e + 1 == 96){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>HOSOMAKI (piccolo rotolo 8pz)</h3></div>` )	}
-if( e + 1 == 104){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>FUTOMAKI ( grande rotolo 5pz)</h3></div>` )	}
+if( e + 1 == 96){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>HOSOMAKI/h3></div>` )	}
+if( e + 1 == 104){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>FUTOMAKI (grande rotolo 5pz)</h3></div>` )	}
 if( e + 1 == 108){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>GUNKAN (bocconcino di riso avvolto 2pz)</h3></div>` )	}
 if( e + 1 == 113){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>CHIRASHI (riso con pesce crudo)</h3></div>` )	}
-if( e + 1 == 116){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>SASHIMI (6pz)</h3></div>` )	}
+if( e + 1 == 116){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>SASHIMI</h3></div>` )	}
 if( e + 1 == 119){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>BARCA</h3></div>` )	}
 if( e + 1 == 122){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>URAMAKI (rotolo di riso 8pz)</h3></div>` )	}
 if( e + 1 == 133){ section.insertAdjacentHTML('beforeend',`<div class="categoria"><h3>URAMAKI SPECIALE (rotolo di riso 8pz)				</h3></div>` )	}
