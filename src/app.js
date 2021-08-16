@@ -1,17 +1,17 @@
 let body = document.getElementsByTagName('body')[0];
 
-let cursor = document.createElement('script');
-    cursor.setAttribute('type', 'text/javascript');
-    cursor.setAttribute('src', '/lib/context-v0.js');
+// let cursor = document.createElement('script');
+//     cursor.setAttribute('type', 'text/javascript');
+//     cursor.setAttribute('src', '/lib/context-v0.js');
 
-function is_touch_device() {  
-  try {  
-    document.createEvent("TouchEvent");  
-    return true;  
-  } catch (e) {  
+function is_touch_device() {
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
     body.append(cursor);
-    return false;  
-  }  
+    return false;
+  }
 }
 is_touch_device()
 
@@ -77,7 +77,7 @@ is_touch_device()
 //   if (typeof window.ontouchstart == "undefined") {
 //     kineticScroll._init();
 //   } else {
-  
+
 //   }
 // });
 
